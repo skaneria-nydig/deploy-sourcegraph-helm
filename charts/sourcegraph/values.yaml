@@ -354,10 +354,10 @@ migrator:
   resources:
     limits:
       cpu: 500m
-      memory: 100M
+      memory: 128Mi
     requests:
       cpu: 100m
-      memory: 50M
+      memory: 128Mi
   # -- Security context for the `migrator` container,
   # learn more from the [Kubernetes documentation](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container)
   containerSecurityContext:
@@ -845,10 +845,10 @@ redisExporter:
   resources:
     limits:
       cpu: 10m
-      memory: 100Mi
+      memory: 128Mi
     requests:
       cpu: 10m
-      memory: 100Mi
+      memory: 128Mi
 
 redisStore:
   # -- Enable `redis-store` Redis server
@@ -1138,7 +1138,7 @@ tracingAgent:
       memory: 500M
     requests:
       cpu: 100m
-      memory: 100M
+      memory: 128Mi
 
 worker:
   image:
