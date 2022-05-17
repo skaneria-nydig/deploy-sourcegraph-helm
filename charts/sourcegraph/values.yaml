@@ -101,11 +101,11 @@ alpine: # Used in init containers
   # learn more from the [Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
   resources:
     limits:
-      cpu: 10m
-      memory: 50Mi
+      cpu: 100m
+      memory: 128Mi
     requests:
-      cpu: 10m
-      memory: 50Mi
+      cpu: 100m
+      memory: 128Mi
 
 cadvisor:
   # -- Enable `cadvisor`
@@ -682,11 +682,11 @@ postgresExporter:
   # learn more from the [Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
   resources:
     limits:
-      cpu: 10m
-      memory: 50Mi
+      cpu: 100m
+      memory: 128Mi
     requests:
-      cpu: 10m
-      memory: 50Mi
+      cpu: 100m
+      memory: 128Mi
 
 preciseCodeIntel:
   # -- Environment variables for the `precise-code-intel-worker` container
@@ -844,10 +844,10 @@ redisExporter:
   # learn more from the [Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
   resources:
     limits:
-      cpu: 10m
+      cpu: 100m
       memory: 128Mi
     requests:
-      cpu: 10m
+      cpu: 100m
       memory: 128Mi
 
 redisStore:
