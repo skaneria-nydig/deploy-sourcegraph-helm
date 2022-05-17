@@ -341,7 +341,7 @@ frontend:
 migrator:
   # -- Enable [migrator](https://docs.sourcegraph.com/admin/how-to/manual_database_migrations) initContainer in
   # `frontend` deployment to perform database migration
-  enabled: true
+  enabled: false
   image:
     # -- Docker image tag for the `migrator` image
     defaultTag: 3.39.1@sha256:d2658c0fa4ff4fe0487cef7983f00566f4533d5ad143f9ddb910310c6d011dfc
