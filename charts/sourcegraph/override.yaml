@@ -20,6 +20,7 @@ frontend:
 
 storageClass:
   create: true
+  name: sourcegraph
   type: gp2 # This configures SSDs (recommended).
   provisioner: ebs.csi.aws.com
   volumeBindingMode: WaitForFirstConsumer
